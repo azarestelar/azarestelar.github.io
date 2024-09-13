@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AZAR ESTELAR | CASINO | MINIJUEGOS</title>
+    <link rel="stylesheet" type="text/css" href="Untitled-2.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>AZAR ESTELAR</h1>
+    </div>
+    <div class="contenido">
+        <img class="imagen-mover" src="https://www.esportsbets.com/es/wp-content/uploads/sites/4/2023/12/minigames-my-stake.jpg" alt="Imagen 1">
+        <div class="articulo">
+            <h2>ENVÍANOS UN MENSAJE Y EMPEZÁ A JUGAR</h2>
+            
+            <!-- Campo para ingresar el nombre -->
+            <label for="nombre">Ingresa tu nombre acá:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre aquí">
+            
+            <!-- Botón para enviar el mensaje -->
+            <button id="enviar">Enviar por WhatsApp</button>
+        </div>
+        <img class="imagen-mover" src="https://i.ytimg.com/vi/T2yodunj8ZE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA6farPHjSIkr6xmpSrfuv8b9gSYg" alt="Imagen 2">
+    </div>
+
+    <!-- Script para construir el enlace dinámico de WhatsApp -->
+    <script>
+        document.getElementById("enviar").addEventListener("click", function() {
+            var nombre = document.getElementById("nombre").value;
+            if (nombre) {
+                var url = "https://wa.me/message/M6B4H6WSGZ4VP1&text=Hola, mi nombre es " + encodeURIComponent(nombre) + " y quiero empezar a jugar.";
+                window.open(url, '_blank');
+            } else {
+                alert("Por favor, ingresa tu nombre.");
+            }
+        });
+    </script>
+</body>
+</html>
