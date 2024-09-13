@@ -30,7 +30,7 @@
         document.getElementById("enviar").addEventListener("click", function() {
             var nombre = document.getElementById("nombre").value;
             if (nombre) {
-                var url = "https://wa.me/message/M6B4H6WSGZ4VP1&text=Hola, mi nombre es " + encodeURIComponent(nombre) + " y quiero empezar a jugar.";
+                var url = "https://wa.me/message/M6B4H6WSGZ4VP1?text=Hola, mi nombre es " + encodeURIComponent(nombre) + " y quiero empezar a jugar.";
                 window.open(url, '_blank');
             } else {
                 alert("Por favor, ingresa tu nombre.");
